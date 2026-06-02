@@ -1,9 +1,24 @@
 {
+  "siteName": "Shinwa Pro",
+  "brandName": "Shinwa Pro",
+  "tagline": "Chăm sóc, sửa chữa và nâng cấp ô tô chuyên nghiệp",
+  "description": "Hệ thống gara ô tô chuyên nghiệp.",
+  "logoUrl": "/images/logo.svg",
+  "faviconUrl": "/favicon.svg",
+  "primaryColor": "#0f172a",
+  "accentColor": "#f97316",
+  "hotline": "0900000000",
+  "email": "contact@example.com",
+  "address": "Địa chỉ gara",
+  "defaultProvince": "Đà Nẵng",
+  "socials": { "facebook": "", "youtube": "", "tiktok": "" },
+  "seo": {
+    "siteBaseUrl": "https://shinwapro.codeandcafe.com",
+    "defaultTitle": "Shinwa Pro - Dịch vụ ô tô chuyên nghiệp",
+    "defaultDescription": "Dịch vụ sửa chữa, bảo dưỡng, nâng cấp và chăm sóc ô tô chuyên nghiệp.",
+    "defaultOgImage": "/images/og-default.webp"
+  },
   "api": {
     "baseUrl": "https://apiShinwapro.codeandcafe.com"
-  },
-  "siteName": "Shinwa Pro Garage",
-  "brandName": "Shinwa Pro Garage",
-  "defaultProvince": "Đà Nẵng",
-  "googleMapUrl": "https://maps.google.com"
+  }
 }
