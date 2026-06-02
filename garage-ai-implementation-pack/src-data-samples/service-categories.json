@@ -1,0 +1,11 @@
+[
+  {
+    "id": "svc_cat_lighting",
+    "parentId": null,
+    "name": "Nâng cấp ánh sáng",
+    "slug": "nang-cap-anh-sang",
+    "description": "Dịch vụ độ đèn, tăng sáng và cân chỉnh ánh sáng.",
+    "imageUrl": "/images/service-categories/lighting.webp",
+    "sortOrder": 1
+  }
+]

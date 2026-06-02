@@ -1,0 +1,41 @@
+[
+  {
+    "id": "prod_bi_led_xlight_qx_v2",
+    "slug": "bi-led-xlight-quantum-x-v2",
+    "categoryId": "cat_lighting",
+    "name": "Bi LED X-Light Quantum X V2",
+    "sku": "XLIGHT-QX-V2",
+    "brand": "X-Light",
+    "shortDescription": "Bi LED tăng sáng cho xe ô tô, phù hợp nhu cầu đi đêm nhiều.",
+    "description": "Sản phẩm dành cho khách hàng muốn nâng cấp ánh sáng, cải thiện tầm nhìn khi lái xe ban đêm.",
+    "price": 13500000,
+    "priceLabel": "fixed",
+    "images": [
+      "/images/products/xlight-quantum-x-v2-1.webp",
+      "/images/products/xlight-quantum-x-v2-2.webp"
+    ],
+    "specs": {
+      "Ứng dụng": "Đèn cos/pha ô tô",
+      "Bảo hành": "Liên hệ gara",
+      "Phù hợp": "Nhiều dòng xe phổ biến"
+    },
+    "compatibleVehicles": [
+      {
+        "brand": "Toyota"
+      },
+      {
+        "brand": "Mazda"
+      },
+      {
+        "brand": "Ford"
+      }
+    ],
+    "tags": [
+      "bi-led",
+      "tang-sang",
+      "den-o-to"
+    ],
+    "isFeatured": true,
+    "isActive": true
+  }
+]

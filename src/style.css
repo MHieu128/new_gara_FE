@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #111827;
+  background: #f8fafc;
+  font-family: 'Be Vietnam Pro', Inter, ui-sans-serif, system-ui, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+
+.media-fallback {
+  background:
+    linear-gradient(135deg, rgba(7, 21, 39, 0.94), rgba(11, 94, 215, 0.56)),
+    radial-gradient(circle at 72% 26%, rgba(255, 143, 31, 0.42), transparent 28%),
+    linear-gradient(45deg, #071527 0%, #0b5ed7 100%);
+}
+
+.prose-lite p {
+  margin-bottom: 1rem;
+  line-height: 1.75;
+}
+
+.hero-shine {
+  position: relative;
+}
+
+.hero-shine::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, transparent 0%, rgba(255, 255, 255, 0.16) 45%, transparent 62%);
+  transform: translateX(-120%);
+  animation: shine 5.5s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes shine {
+  0%,
+  48% {
+    transform: translateX(-120%);
+  }
+  78%,
+  100% {
+    transform: translateX(120%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-shine::after {
+    animation: none;
+  }
+}

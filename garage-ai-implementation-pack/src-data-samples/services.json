@@ -1,0 +1,30 @@
+[
+  {
+    "id": "svc_do_den_o_to",
+    "slug": "do-den-o-to",
+    "categoryId": "svc_cat_lighting",
+    "name": "Độ đèn ô tô",
+    "shortDescription": "Nâng cấp ánh sáng ô tô với các giải pháp Bi LED, Bi Laser, Bi gầm.",
+    "description": "Dịch vụ tư vấn, lắp đặt và cân chỉnh ánh sáng cho xe ô tô.",
+    "heroImageUrl": "/images/services/do-den-o-to.webp",
+    "gallery": [],
+    "basePrice": null,
+    "priceLabel": "contact",
+    "estimatedDurationMinutes": 180,
+    "relatedProductIds": [
+      "prod_bi_led_xlight_qx_v2"
+    ],
+    "faqs": [
+      {
+        "question": "Độ đèn có ảnh hưởng đăng kiểm không?",
+        "answer": "Tùy cấu hình thi công và quy định hiện hành. Gara sẽ tư vấn phương án phù hợp trước khi lắp đặt."
+      }
+    ],
+    "seo": {
+      "title": "Dịch vụ độ đèn ô tô chuyên nghiệp",
+      "description": "Nâng cấp ánh sáng ô tô, tư vấn Bi LED, Bi Laser, Bi gầm phù hợp từng dòng xe."
+    },
+    "isFeatured": true,
+    "isActive": true
+  }
+]

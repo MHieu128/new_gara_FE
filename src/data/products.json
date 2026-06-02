@@ -1,0 +1,360 @@
+[
+  {
+    "id": "prod_goi_bao_duong_dinh_ky",
+    "slug": "goi-bao-duong-dinh-ky-shinwa",
+    "categoryId": "cat_service_packages",
+    "name": "Gói bảo dưỡng định kỳ Shinwa",
+    "sku": "SHINWA-MAINTENANCE",
+    "brand": "Shinwa Pro",
+    "shortDescription": "Gói thay dầu, lọc và kiểm tra an toàn vận hành theo mốc km.",
+    "description": "Gói bảo dưỡng định kỳ gồm kiểm tra các hạng mục phanh, gầm, điện, nước làm mát và tư vấn vật tư phù hợp theo tình trạng xe.",
+    "price": 1200000,
+    "priceLabel": "from",
+    "images": ["https://images.unsplash.com/photo-1487754180451-c456f719a1fc?q=80&w=1200&auto=format&fit=crop"],
+    "specs": {
+      "Hạng mục": "Dầu, lọc, phanh, gầm, điện, nước làm mát",
+      "Thời gian": "60 - 120 phút",
+      "Khu vực": "Đà Nẵng"
+    },
+    "compatibleVehicles": [{"brand": "Toyota"}, {"brand": "Honda"}, {"brand": "Mazda"}, {"brand": "Ford"}],
+    "tags": ["bao-duong", "thay-dau", "kiem-tra-xe"],
+    "isFeatured": true,
+    "isActive": true
+  },
+  {
+    "id": "prod_dau_nhot_loc_co_ban",
+    "slug": "combo-dau-nhot-loc-co-ban",
+    "categoryId": "cat_parts",
+    "name": "Combo dầu nhớt và lọc cơ bản",
+    "sku": "PART-OIL-FILTER",
+    "brand": "Theo dòng xe",
+    "shortDescription": "Dầu nhớt, lọc dầu, lọc gió và vật tư bảo dưỡng cơ bản.",
+    "description": "Combo vật tư được tư vấn theo dung tích máy, đời xe và lịch sử bảo dưỡng. Giá thay đổi theo loại dầu, dung tích và phụ tùng tương thích.",
+    "price": null,
+    "priceLabel": "contact",
+    "images": ["https://images.unsplash.com/photo-1635437536607-b8572f443763?q=80&w=1200&auto=format&fit=crop"],
+    "specs": {
+      "Vật tư": "Dầu máy, lọc dầu, lọc gió",
+      "Tư vấn": "Theo dòng xe và mốc km",
+      "Giá": "Báo theo cấu hình"
+    },
+    "tags": ["dau-nhot", "loc-dau", "bao-duong"],
+    "isFeatured": true,
+    "isActive": true
+  },
+  {
+    "id": "prod_kiem_tra_gam_may",
+    "slug": "goi-kiem-tra-gam-may",
+    "categoryId": "cat_service_packages",
+    "name": "Gói kiểm tra gầm máy",
+    "sku": "PKG-UNDERBODY",
+    "brand": "Shinwa Pro",
+    "shortDescription": "Chẩn đoán tiếng kêu, rung, rò rỉ và các bất thường gầm máy.",
+    "description": "Gói kiểm tra tập trung vào gầm, máy, hộp số, hệ truyền động và các triệu chứng vận hành bất thường. Phù hợp trước khi sửa lớn hoặc mua xe cũ.",
+    "price": 350000,
+    "priceLabel": "from",
+    "images": ["https://images.unsplash.com/photo-1625047509168-a7026f36de04?q=80&w=1200&auto=format&fit=crop"],
+    "specs": {
+      "Hạng mục": "Gầm, máy, hộp số, rò rỉ",
+      "Thời gian": "60 - 90 phút",
+      "Kết quả": "Tư vấn hạng mục cần xử lý"
+    },
+    "tags": ["gam-may", "kiem-tra", "chan-doan"],
+    "isFeatured": true,
+    "isActive": true
+  },
+  {
+    "id": "prod_kiem_tra_phanh_lop",
+    "slug": "goi-kiem-tra-phanh-lop",
+    "categoryId": "cat_service_packages",
+    "name": "Gói kiểm tra phanh và lốp",
+    "sku": "PKG-BRAKE-TIRE",
+    "brand": "Shinwa Pro",
+    "shortDescription": "Kiểm tra má phanh, đĩa phanh, áp suất, mòn lốp và lệch lái.",
+    "description": "Gói kiểm tra phù hợp khi xe có tiếng rít phanh, rung vô lăng, mòn lốp không đều hoặc chuẩn bị đi xa.",
+    "price": 300000,
+    "priceLabel": "from",
+    "images": ["https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop"],
+    "specs": {
+      "Hạng mục": "Phanh, lốp, thước lái",
+      "Thời gian": "45 - 60 phút",
+      "Tư vấn": "Thay thế hoặc cân chỉnh nếu cần"
+    },
+    "tags": ["phanh", "lop", "can-chinh"],
+    "isFeatured": false,
+    "isActive": true
+  },
+  {
+    "id": "prod_goi_rua_xe_cao_cap",
+    "slug": "goi-rua-xe-cao-cap",
+    "categoryId": "cat_care",
+    "name": "Gói rửa xe cao cấp",
+    "sku": "CARE-WASH-PREMIUM",
+    "brand": "Shinwa Pro",
+    "shortDescription": "Rửa thân vỏ, mâm lốp, kính và hút bụi nội thất cơ bản.",
+    "description": "Gói rửa xe dành cho khách cần xe sạch kỹ, thao tác cẩn thận và hoàn thiện chỉn chu hơn rửa nhanh thông thường.",
+    "price": 120000,
+    "priceLabel": "from",
+    "images": ["https://images.unsplash.com/photo-1607860108855-64acf2078ed9?q=80&w=1200&auto=format&fit=crop"],
+    "specs": {
+      "Hạng mục": "Thân vỏ, kính, mâm lốp, hút bụi",
+      "Thời gian": "30 - 45 phút",
+      "Phù hợp": "Chăm sóc hằng tuần"
+    },
+    "tags": ["rua-xe", "cham-soc-xe", "ve-sinh"],
+    "isFeatured": true,
+    "isActive": true
+  },
+  {
+    "id": "prod_goi_detailing",
+    "slug": "goi-detailing-cham-soc-xe",
+    "categoryId": "cat_care",
+    "name": "Gói detailing chăm sóc xe",
+    "sku": "SHINWA-DETAILING",
+    "brand": "Shinwa Pro",
+    "shortDescription": "Vệ sinh nội thất, đánh bóng và chăm sóc bề mặt theo tình trạng xe.",
+    "description": "Gói detailing hỗ trợ làm sạch sâu nội thất, xử lý bề mặt sơn và vệ sinh khoang máy tùy hiện trạng xe.",
+    "price": 900000,
+    "priceLabel": "from",
+    "images": ["https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?q=80&w=1200&auto=format&fit=crop"],
+    "specs": {
+      "Hạng mục": "Nội thất, sơn, khoang máy",
+      "Tư vấn": "Theo hiện trạng xe",
+      "Thời gian": "Tùy gói chăm sóc"
+    },
+    "tags": ["detailing", "cham-soc-xe", "ve-sinh"],
+    "isFeatured": true,
+    "isActive": true
+  },
+  {
+    "id": "prod_phu_ceramic",
+    "slug": "phu-ceramic-bao-ve-son",
+    "categoryId": "cat_care",
+    "name": "Phủ ceramic bảo vệ sơn",
+    "sku": "CARE-CERAMIC",
+    "brand": "Tư vấn theo xe",
+    "shortDescription": "Tăng độ bóng, giảm bám bẩn và hỗ trợ bảo vệ bề mặt sơn.",
+    "description": "Gói phủ ceramic được tư vấn theo tình trạng sơn, nhu cầu sử dụng và ngân sách. Trước khi phủ cần kiểm tra và xử lý bề mặt phù hợp.",
+    "price": null,
+    "priceLabel": "contact",
+    "images": ["https://images.unsplash.com/photo-1609521263047-f8f205293f24?q=80&w=1200&auto=format&fit=crop"],
+    "specs": {
+      "Hạng mục": "Hiệu chỉnh bề mặt, phủ bảo vệ",
+      "Tư vấn": "Theo tình trạng sơn",
+      "Giá": "Báo theo gói"
+    },
+    "tags": ["ceramic", "bao-ve-son", "detailing"],
+    "isFeatured": false,
+    "isActive": true
+  },
+  {
+    "id": "prod_camera_hanh_trinh",
+    "slug": "camera-hanh-trinh-o-to",
+    "categoryId": "cat_accessories",
+    "name": "Camera hành trình ô tô",
+    "sku": "ACC-DASHCAM",
+    "brand": "Tư vấn theo xe",
+    "shortDescription": "Lắp camera hành trình phù hợp nhu cầu di chuyển và ghi hình.",
+    "description": "Camera hành trình được tư vấn theo dòng xe, góc ghi hình, nhu cầu lưu trữ và ngân sách. Shinwa Pro kiểm tra vận hành sau lắp đặt.",
+    "price": null,
+    "priceLabel": "contact",
+    "images": ["https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?q=80&w=1200&auto=format&fit=crop"],
+    "specs": {
+      "Tư vấn": "Theo dòng xe và nhu cầu sử dụng",
+      "Thi công": "Lắp đặt gọn, kiểm tra sau lắp",
+      "Giá": "Báo giá theo cấu hình"
+    },
+    "tags": ["camera", "phu-kien", "nang-cap"],
+    "isFeatured": true,
+    "isActive": true
+  },
+  {
+    "id": "prod_man_hinh_android",
+    "slug": "man-hinh-android-o-to",
+    "categoryId": "cat_accessories",
+    "name": "Màn hình Android ô tô",
+    "sku": "ACC-ANDROID-SCREEN",
+    "brand": "Tư vấn theo xe",
+    "shortDescription": "Nâng cấp màn hình giải trí và tiện ích kết nối cho xe.",
+    "description": "Màn hình Android được lựa chọn theo mặt dưỡng, hệ thống điện và nhu cầu sử dụng. Garage tư vấn phương án tương thích trước khi lắp.",
+    "price": null,
+    "priceLabel": "contact",
+    "images": ["https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=1200&auto=format&fit=crop"],
+    "specs": {
+      "Ứng dụng": "Giải trí, camera, điều hướng",
+      "Tương thích": "Tùy dòng xe",
+      "Thi công": "Kiểm tra điện sau lắp"
+    },
+    "tags": ["man-hinh", "android", "phu-kien"],
+    "isFeatured": true,
+    "isActive": true
+  },
+  {
+    "id": "prod_phim_cach_nhiet",
+    "slug": "phim-cach-nhiet-o-to",
+    "categoryId": "cat_accessories",
+    "name": "Phim cách nhiệt ô tô",
+    "sku": "ACC-WINDOW-FILM",
+    "brand": "Tư vấn theo nhu cầu",
+    "shortDescription": "Giải pháp giảm nóng, tăng riêng tư và bảo vệ nội thất xe.",
+    "description": "Phim cách nhiệt được tư vấn theo vị trí kính, mức truyền sáng và nhu cầu sử dụng thực tế tại Đà Nẵng.",
+    "price": null,
+    "priceLabel": "contact",
+    "images": ["https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1200&auto=format&fit=crop"],
+    "specs": {
+      "Hạng mục": "Kính lái, kính sườn, kính hậu",
+      "Tư vấn": "Theo nhu cầu cách nhiệt và riêng tư",
+      "Giá": "Báo giá theo cấu hình"
+    },
+    "tags": ["phim-cach-nhiet", "phu-kien", "chong-nong"],
+    "isFeatured": false,
+    "isActive": true
+  },
+  {
+    "id": "prod_binh_ac_quy",
+    "slug": "binh-ac-quy-o-to",
+    "categoryId": "cat_parts",
+    "name": "Bình ắc quy ô tô",
+    "sku": "PART-BATTERY",
+    "brand": "Theo dòng xe",
+    "shortDescription": "Kiểm tra, tư vấn và thay bình ắc quy phù hợp cấu hình xe.",
+    "description": "Ắc quy được tư vấn theo thông số xe, nhu cầu sử dụng, kích thước hộc bình và hệ thống điện. Shinwa hỗ trợ kiểm tra điện áp trước khi thay.",
+    "price": null,
+    "priceLabel": "contact",
+    "images": ["https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=1200&auto=format&fit=crop"],
+    "specs": {
+      "Kiểm tra": "Điện áp, khả năng đề, cực bình",
+      "Tư vấn": "Theo thông số xe",
+      "Giá": "Theo thương hiệu và dung lượng"
+    },
+    "tags": ["ac-quy", "dien-xe", "vat-tu"],
+    "isFeatured": false,
+    "isActive": true
+  },
+  {
+    "id": "prod_lop_o_to",
+    "slug": "lop-o-to-tu-van-thay-the",
+    "categoryId": "cat_parts",
+    "name": "Lốp ô tô tư vấn thay thế",
+    "sku": "PART-TIRE",
+    "brand": "Theo kích thước lốp",
+    "shortDescription": "Tư vấn thay lốp theo kích thước, độ mòn, tải trọng và nhu cầu chạy xe.",
+    "description": "Shinwa kiểm tra độ mòn, áp suất, vết nứt, phù lốp và tư vấn thay thế theo thông số phù hợp.",
+    "price": null,
+    "priceLabel": "contact",
+    "images": ["https://images.unsplash.com/photo-1571168097441-0d8a5c5f2fd5?q=80&w=1200&auto=format&fit=crop"],
+    "specs": {
+      "Kiểm tra": "Độ mòn, áp suất, vết nứt",
+      "Tư vấn": "Theo kích thước lốp",
+      "Dịch vụ": "Thay lốp, cân bằng, kiểm tra"
+    },
+    "tags": ["lop", "an-toan", "phu-tung"],
+    "isFeatured": false,
+    "isActive": true
+  },
+  {
+    "id": "prod_dong_son_dam_xuoc",
+    "slug": "goi-xu-ly-tray-xuoc-dam-va",
+    "categoryId": "cat_service_packages",
+    "name": "Gói xử lý trầy xước, dặm vá",
+    "sku": "PKG-PAINT-TOUCHUP",
+    "brand": "Shinwa Pro",
+    "shortDescription": "Xử lý trầy xước, móp nhẹ và phục hồi bề mặt sơn theo màu xe.",
+    "description": "Gói đồng sơn nhẹ dành cho các vết trầy, móp nhỏ hoặc va chạm nhẹ. Chi phí phụ thuộc vị trí, diện tích và màu sơn.",
+    "price": 1500000,
+    "priceLabel": "from",
+    "images": ["https://images.unsplash.com/photo-1561725798-9a83085396d0?q=80&w=1200&auto=format&fit=crop"],
+    "specs": {
+      "Hạng mục": "Trầy xước, móp nhẹ, phục hồi sơn",
+      "Giá": "Từ 1.500.000đ",
+      "Báo giá": "Sau kiểm tra hiện trạng"
+    },
+    "tags": ["dong-son", "tray-xuoc", "than-vo"],
+    "isFeatured": false,
+    "isActive": true
+  },
+  {
+    "id": "prod_cuu_ho_kich_binh",
+    "slug": "cuu-ho-kich-binh-tan-noi",
+    "categoryId": "cat_emergency",
+    "name": "Cứu hộ kích bình tận nơi",
+    "sku": "SOS-BATTERY",
+    "brand": "Shinwa Pro",
+    "shortDescription": "Hỗ trợ xe hết bình, khó đề hoặc cần kiểm tra điện nhanh tại chỗ.",
+    "description": "Dịch vụ hỗ trợ kích bình và kiểm tra nhanh hệ thống điện. Phí phụ thuộc vị trí, thời điểm và tình trạng xe.",
+    "price": null,
+    "priceLabel": "contact",
+    "images": ["https://images.unsplash.com/photo-1549924231-f129b911e442?q=80&w=1200&auto=format&fit=crop"],
+    "specs": {
+      "Hỗ trợ": "Kích bình, kiểm tra nhanh",
+      "Thời gian": "Tùy vị trí",
+      "Giá": "Xác nhận qua hotline"
+    },
+    "tags": ["cuu-ho", "kich-binh", "24-7"],
+    "isFeatured": true,
+    "isActive": true
+  },
+  {
+    "id": "prod_cuu_ho_keo_xe",
+    "slug": "cuu-ho-keo-xe-da-nang",
+    "categoryId": "cat_emergency",
+    "name": "Cứu hộ kéo xe Đà Nẵng",
+    "sku": "SOS-TOWING",
+    "brand": "Shinwa Pro",
+    "shortDescription": "Điều phối kéo xe khi xe không thể tiếp tục di chuyển an toàn.",
+    "description": "Shinwa tiếp nhận thông tin vị trí, tình trạng xe và tư vấn phương án kéo xe hoặc hỗ trợ lưu động phù hợp.",
+    "price": null,
+    "priceLabel": "contact",
+    "images": ["https://images.unsplash.com/photo-1532974297617-c0f05fe48bff?q=80&w=1200&auto=format&fit=crop"],
+    "specs": {
+      "Khu vực": "Đà Nẵng và lân cận",
+      "Tư vấn": "Theo vị trí và tình trạng xe",
+      "Giá": "Xác nhận trước điều phối"
+    },
+    "tags": ["cuu-ho", "keo-xe", "24-7"],
+    "isFeatured": false,
+    "isActive": true
+  },
+  {
+    "id": "prod_tu_van_bao_hiem",
+    "slug": "tu-van-bao-hiem-o-to",
+    "categoryId": "cat_emergency",
+    "name": "Tư vấn bảo hiểm ô tô",
+    "sku": "INSURANCE-CONSULT",
+    "brand": "Shinwa Pro",
+    "shortDescription": "Tư vấn bảo hiểm vật chất, trách nhiệm dân sự và hồ sơ bồi thường.",
+    "description": "Gói tư vấn giúp khách hiểu quyền lợi, chuẩn bị hồ sơ và xử lý khi xe cần sửa chữa theo bảo hiểm.",
+    "price": null,
+    "priceLabel": "contact",
+    "images": ["https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1200&auto=format&fit=crop"],
+    "specs": {
+      "Hỗ trợ": "Tư vấn quyền lợi, hồ sơ, bồi thường",
+      "Phù hợp": "Khách mua mới hoặc xử lý sự cố",
+      "Giá": "Theo gói bảo hiểm"
+    },
+    "tags": ["bao-hiem", "boi-thuong", "ho-so"],
+    "isFeatured": false,
+    "isActive": true
+  },
+  {
+    "id": "prod_kiem_tra_truoc_dang_kiem",
+    "slug": "goi-kiem-tra-truoc-dang-kiem",
+    "categoryId": "cat_service_packages",
+    "name": "Gói kiểm tra trước đăng kiểm",
+    "sku": "PKG-INSPECTION",
+    "brand": "Shinwa Pro",
+    "shortDescription": "Rà soát đèn, phanh, lốp, gầm và các lỗi dễ bị từ chối đăng kiểm.",
+    "description": "Gói kiểm tra giúp chủ xe chủ động xử lý hạng mục an toàn trước khi đưa xe đi đăng kiểm.",
+    "price": 250000,
+    "priceLabel": "from",
+    "images": ["https://images.unsplash.com/photo-1493238792000-8113da705763?q=80&w=1200&auto=format&fit=crop"],
+    "specs": {
+      "Hạng mục": "Đèn, phanh, lốp, gầm",
+      "Thời gian": "45 phút",
+      "Mục tiêu": "Phát hiện lỗi trước đăng kiểm"
+    },
+    "tags": ["dang-kiem", "kiem-tra", "an-toan"],
+    "isFeatured": false,
+    "isActive": true
+  }
+]

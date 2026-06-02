@@ -1,0 +1,526 @@
+[
+  {
+    "id": "svc_bao_duong_dinh_ky",
+    "slug": "bao-duong-dinh-ky-o-to-da-nang",
+    "categoryId": "svc_cat_maintenance",
+    "name": "Bảo dưỡng định kỳ ô tô Đà Nẵng",
+    "shortDescription": "Thay dầu, lọc, kiểm tra phanh, gầm, điện và nước làm mát theo mốc km.",
+    "description": "Dịch vụ bảo dưỡng định kỳ tại Shinwa Pro Garage tập trung vào kiểm tra các hạng mục vận hành quan trọng, tư vấn vật tư phù hợp và báo giá trước khi thực hiện. Phù hợp cho xe đến mốc bảo dưỡng hoặc cần kiểm tra tổng quát trước chuyến đi.",
+    "heroImageUrl": "https://images.unsplash.com/photo-1487754180451-c456f719a1fc?q=80&w=1400&auto=format&fit=crop",
+    "gallery": [],
+    "basePrice": 1200000,
+    "priceLabel": "from",
+    "estimatedDurationMinutes": 120,
+    "relatedProductIds": ["prod_goi_bao_duong_dinh_ky", "prod_dau_nhot_loc_co_ban"],
+    "faqs": [
+      {
+        "question": "Bảo dưỡng định kỳ mất bao lâu?",
+        "answer": "Các gói cơ bản thường hoàn thành trong khoảng 60–120 phút, tùy tình trạng xe và hạng mục phát sinh."
+      },
+      {
+        "question": "Có báo giá trước khi làm không?",
+        "answer": "Có. Cố vấn kiểm tra, tư vấn hạng mục và xác nhận chi phí trước khi kỹ thuật viên thực hiện."
+      }
+    ],
+    "seo": {
+      "title": "Bảo dưỡng định kỳ ô tô Đà Nẵng | Shinwa Pro Garage",
+      "description": "Bảo dưỡng định kỳ ô tô tại Đà Nẵng từ 1.200.000đ, kiểm tra phanh, gầm, dầu lọc và hệ thống điện."
+    },
+    "isFeatured": true,
+    "isActive": true
+  },
+  {
+    "id": "svc_sua_chua_gam_may",
+    "slug": "sua-chua-gam-may-o-to-da-nang",
+    "categoryId": "svc_cat_maintenance",
+    "name": "Sửa chữa gầm máy ô tô Đà Nẵng",
+    "shortDescription": "Chẩn đoán rung, kêu, hao dầu, nóng máy, hộp số và hệ thống truyền động.",
+    "description": "Shinwa Pro Garage tiếp nhận kiểm tra các vấn đề gầm máy bằng quy trình chẩn đoán rõ ràng, tách lỗi theo triệu chứng và báo giá sau kiểm tra. Dịch vụ phù hợp khi xe có tiếng kêu lạ, rung giật, hao nhiên liệu hoặc vận hành bất thường.",
+    "heroImageUrl": "https://images.unsplash.com/photo-1625047509168-a7026f36de04?q=80&w=1400&auto=format&fit=crop",
+    "gallery": [],
+    "basePrice": null,
+    "priceLabel": "contact",
+    "estimatedDurationMinutes": null,
+    "relatedProductIds": ["prod_kiem_tra_gam_may"],
+    "faqs": [
+      {
+        "question": "Chi phí sửa gầm máy tính thế nào?",
+        "answer": "Chi phí phụ thuộc hạng mục hư hỏng, vật tư và dòng xe. Garage báo giá sau khi kiểm tra."
+      }
+    ],
+    "seo": {
+      "title": "Sửa chữa gầm máy ô tô Đà Nẵng | Shinwa Pro Garage",
+      "description": "Chẩn đoán và sửa chữa gầm máy, hộp số, hệ truyền động ô tô tại Đà Nẵng."
+    },
+    "isFeatured": true,
+    "isActive": true
+  },
+  {
+    "id": "svc_phanh_lop_can_chinh",
+    "slug": "kiem-tra-phanh-lop-can-chinh-thuoc-lai",
+    "categoryId": "svc_cat_maintenance",
+    "name": "Kiểm tra phanh, lốp và cân chỉnh thước lái",
+    "shortDescription": "Kiểm tra má phanh, đĩa phanh, áp suất lốp, độ mòn và độ lệch lái.",
+    "description": "Gói kiểm tra an toàn tập trung vào những hạng mục ảnh hưởng trực tiếp đến vận hành: phanh, lốp, thước lái, rung vô lăng và độ ổn định khi chạy tốc độ cao. Shinwa tư vấn thay thế hoặc cân chỉnh theo kết quả đo thực tế.",
+    "heroImageUrl": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1400&auto=format&fit=crop",
+    "gallery": [],
+    "basePrice": 300000,
+    "priceLabel": "from",
+    "estimatedDurationMinutes": 60,
+    "relatedProductIds": ["prod_kiem_tra_phanh_lop"],
+    "faqs": [
+      {
+        "question": "Xe bị lệch lái có cần cân chỉnh ngay không?",
+        "answer": "Nên kiểm tra sớm vì lệch lái có thể làm mòn lốp nhanh và giảm độ an toàn khi phanh hoặc vào cua."
+      }
+    ],
+    "seo": {
+      "title": "Kiểm tra phanh lốp và cân chỉnh thước lái Đà Nẵng",
+      "description": "Kiểm tra phanh, lốp, rung vô lăng, lệch lái và cân chỉnh thước lái tại Shinwa Pro Garage."
+    },
+    "isFeatured": false,
+    "isActive": true
+  },
+  {
+    "id": "svc_chan_doan_xoa_loi",
+    "slug": "chan-doan-xoa-loi-o-to-da-nang",
+    "categoryId": "svc_cat_maintenance",
+    "name": "Chẩn đoán - xóa lỗi ô tô",
+    "shortDescription": "Kiểm tra lỗi điện tử, đọc mã lỗi, tư vấn nguyên nhân và hướng xử lý.",
+    "description": "Dịch vụ chẩn đoán - xóa lỗi giúp xác định các cảnh báo trên xe, đọc mã lỗi hệ thống và tư vấn hạng mục cần kiểm tra sâu hơn. Shinwa ưu tiên giải thích dễ hiểu để khách nắm đúng tình trạng xe.",
+    "heroImageUrl": "https://images.unsplash.com/photo-1589554130426-341f80b37c0f?q=80&w=1400&auto=format&fit=crop",
+    "gallery": [],
+    "basePrice": null,
+    "priceLabel": "contact",
+    "estimatedDurationMinutes": 45,
+    "relatedProductIds": ["prod_kiem_tra_gam_may"],
+    "faqs": [
+      {
+        "question": "Xóa lỗi có làm hết bệnh xe không?",
+        "answer": "Không phải lúc nào cũng vậy. Xóa lỗi chỉ là một bước; cần kiểm tra nguyên nhân nếu lỗi quay lại hoặc xe có triệu chứng bất thường."
+      }
+    ],
+    "seo": {
+      "title": "Chẩn đoán - xóa lỗi ô tô Đà Nẵng | Shinwa Pro Garage",
+      "description": "Đọc mã lỗi, chẩn đoán hệ thống điện tử và tư vấn sửa chữa ô tô tại Đà Nẵng."
+    },
+    "isFeatured": false,
+    "isActive": true
+  },
+  {
+    "id": "svc_dai_tu_dong_co",
+    "slug": "dai-tu-dong-co-o-to-da-nang",
+    "categoryId": "svc_cat_maintenance",
+    "name": "Đại tu động cơ ô tô",
+    "shortDescription": "Kiểm tra hao dầu, nóng máy, giảm công suất và các hư hỏng động cơ nặng.",
+    "description": "Đại tu động cơ là hạng mục cần kiểm tra kỹ trước khi quyết định. Shinwa tiếp nhận xe, chẩn đoán triệu chứng, tư vấn phương án và báo giá theo tình trạng thực tế.",
+    "heroImageUrl": "https://images.unsplash.com/photo-1635437536607-b8572f443763?q=80&w=1400&auto=format&fit=crop",
+    "gallery": [],
+    "basePrice": null,
+    "priceLabel": "contact",
+    "estimatedDurationMinutes": null,
+    "relatedProductIds": ["prod_kiem_tra_gam_may"],
+    "faqs": [
+      {
+        "question": "Khi nào cần đại tu động cơ?",
+        "answer": "Khi xe hao dầu nặng, nóng máy, mất công suất, có tiếng kêu bất thường hoặc kết quả kiểm tra cho thấy hư hỏng nghiêm trọng."
+      }
+    ],
+    "seo": {
+      "title": "Đại tu động cơ ô tô Đà Nẵng | Shinwa Pro Garage",
+      "description": "Kiểm tra và tư vấn đại tu động cơ ô tô tại Đà Nẵng theo tình trạng thực tế."
+    },
+    "isFeatured": false,
+    "isActive": true
+  },
+  {
+    "id": "svc_cap_nhat_phan_mem",
+    "slug": "cap-nhat-phan-mem-o-to-da-nang",
+    "categoryId": "svc_cat_electrical",
+    "name": "Cập nhật phần mềm ô tô",
+    "shortDescription": "Kiểm tra phiên bản phần mềm, cấu hình hệ thống và các lỗi liên quan module điện tử.",
+    "description": "Một số dòng xe cần cập nhật hoặc cấu hình phần mềm để hệ thống hoạt động ổn định hơn. Shinwa tư vấn theo đời xe, triệu chứng và khả năng hỗ trợ thực tế.",
+    "heroImageUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1400&auto=format&fit=crop",
+    "gallery": [],
+    "basePrice": null,
+    "priceLabel": "contact",
+    "estimatedDurationMinutes": null,
+    "relatedProductIds": [],
+    "faqs": [
+      {
+        "question": "Xe nào cũng cập nhật phần mềm được không?",
+        "answer": "Không. Khả năng hỗ trợ phụ thuộc dòng xe, module, thiết bị và tình trạng hệ thống."
+      }
+    ],
+    "seo": {
+      "title": "Cập nhật phần mềm ô tô Đà Nẵng | Shinwa Pro Garage",
+      "description": "Tư vấn cập nhật phần mềm và xử lý lỗi module điện tử ô tô tại Đà Nẵng."
+    },
+    "isFeatured": false,
+    "isActive": true
+  },
+  {
+    "id": "svc_dong_son_than_vo",
+    "slug": "dong-son-than-vo-o-to-da-nang",
+    "categoryId": "svc_cat_body_paint",
+    "name": "Đồng sơn thân vỏ ô tô Đà Nẵng",
+    "shortDescription": "Xử lý trầy xước, móp, va chạm nhẹ và phục hồi bề mặt theo màu xe.",
+    "description": "Dịch vụ đồng sơn thân vỏ hỗ trợ phục hồi các vết trầy, móp và hư hại bề mặt. Quy trình tập trung vào kiểm tra mức độ hư hại, tư vấn phương án sửa chữa và hoàn thiện màu sơn hài hòa với thân xe.",
+    "heroImageUrl": "https://images.unsplash.com/photo-1561725798-9a83085396d0?q=80&w=1400&auto=format&fit=crop",
+    "gallery": [],
+    "basePrice": 1500000,
+    "priceLabel": "from",
+    "estimatedDurationMinutes": null,
+    "relatedProductIds": ["prod_dong_son_dam_xuoc"],
+    "faqs": [
+      {
+        "question": "Đồng sơn có báo tiến độ không?",
+        "answer": "Có. Shinwa Pro Garage xác nhận hạng mục, chi phí và thời gian dự kiến trước khi nhận xe."
+      }
+    ],
+    "seo": {
+      "title": "Đồng sơn thân vỏ ô tô Đà Nẵng | Shinwa Pro Garage",
+      "description": "Đồng sơn ô tô tại Đà Nẵng từ 1.500.000đ, xử lý trầy xước, móp và va chạm nhẹ."
+    },
+    "isFeatured": true,
+    "isActive": true
+  },
+  {
+    "id": "svc_son_doi_mau",
+    "slug": "son-doi-mau-o-to-da-nang",
+    "categoryId": "svc_cat_body_paint",
+    "name": "Sơn đổi màu ô tô",
+    "shortDescription": "Tư vấn đổi màu xe, xử lý bề mặt và hoàn thiện màu sơn theo nhu cầu.",
+    "description": "Sơn đổi màu cần tư vấn kỹ về màu sắc, bề mặt, thời gian thi công và các thủ tục liên quan. Shinwa hỗ trợ khách lựa chọn phương án phù hợp trước khi nhận xe.",
+    "heroImageUrl": "https://images.unsplash.com/photo-1561725798-9a83085396d0?q=80&w=1400&auto=format&fit=crop",
+    "gallery": [],
+    "basePrice": null,
+    "priceLabel": "contact",
+    "estimatedDurationMinutes": null,
+    "relatedProductIds": ["prod_dong_son_dam_xuoc"],
+    "faqs": [
+      {
+        "question": "Sơn đổi màu có cần tư vấn hồ sơ không?",
+        "answer": "Có. Khách nên được tư vấn trước về màu, phạm vi thi công và các thủ tục liên quan đến thông tin xe."
+      }
+    ],
+    "seo": {
+      "title": "Sơn đổi màu ô tô Đà Nẵng | Shinwa Pro Garage",
+      "description": "Tư vấn sơn đổi màu ô tô, xử lý bề mặt và hoàn thiện thân vỏ tại Đà Nẵng."
+    },
+    "isFeatured": false,
+    "isActive": true
+  },
+  {
+    "id": "svc_phuc_hoi_tai_nan",
+    "slug": "phuc-hoi-xe-tai-nan-da-nang",
+    "categoryId": "svc_cat_body_paint",
+    "name": "Phục hồi xe tai nạn",
+    "shortDescription": "Kiểm tra thân vỏ, gầm, khung và tư vấn phương án phục hồi sau va chạm.",
+    "description": "Dịch vụ phục hồi xe tai nạn tập trung vào đánh giá hiện trạng, mức độ ảnh hưởng và phương án sửa chữa phù hợp. Garage hỗ trợ tư vấn hồ sơ nếu xe xử lý theo bảo hiểm.",
+    "heroImageUrl": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1400&auto=format&fit=crop",
+    "gallery": [],
+    "basePrice": null,
+    "priceLabel": "contact",
+    "estimatedDurationMinutes": null,
+    "relatedProductIds": ["prod_tu_van_bao_hiem"],
+    "faqs": [
+      {
+        "question": "Xe tai nạn có báo giá ngay được không?",
+        "answer": "Cần kiểm tra thực tế để đánh giá thân vỏ, gầm, khung và các hệ thống liên quan trước khi báo giá."
+      }
+    ],
+    "seo": {
+      "title": "Phục hồi xe tai nạn Đà Nẵng | Shinwa Pro Garage",
+      "description": "Kiểm tra và phục hồi xe tai nạn, thân vỏ, gầm và hỗ trợ bảo hiểm tại Đà Nẵng."
+    },
+    "isFeatured": false,
+    "isActive": true
+  },
+  {
+    "id": "svc_dien_lanh_o_to",
+    "slug": "sua-dien-lanh-o-to-da-nang",
+    "categoryId": "svc_cat_electrical",
+    "name": "Sửa điện lạnh ô tô Đà Nẵng",
+    "shortDescription": "Kiểm tra điều hòa, cảm biến, bình điện và hệ thống chiếu sáng.",
+    "description": "Dịch vụ điện lạnh kiểm tra khả năng làm mát, cảm biến, điện xe và các lỗi liên quan đến hệ thống điều hòa. Các hạng mục được tư vấn rõ để khách nắm tình trạng xe trước khi sửa.",
+    "heroImageUrl": "https://images.unsplash.com/photo-1589554130426-341f80b37c0f?q=80&w=1400&auto=format&fit=crop",
+    "gallery": [],
+    "basePrice": 600000,
+    "priceLabel": "from",
+    "estimatedDurationMinutes": 90,
+    "relatedProductIds": ["prod_goi_kiem_tra_dien_lanh", "prod_binh_ac_quy"],
+    "faqs": [
+      {
+        "question": "Điều hòa kém lạnh có cần thay ngay không?",
+        "answer": "Không nên thay vội. Kỹ thuật viên cần kiểm tra gas, lọc, cảm biến và đường ống để xác định nguyên nhân."
+      }
+    ],
+    "seo": {
+      "title": "Sửa điện lạnh ô tô Đà Nẵng | Shinwa Pro Garage",
+      "description": "Sửa điều hòa, cảm biến, bình điện và hệ thống chiếu sáng ô tô tại Đà Nẵng."
+    },
+    "isFeatured": true,
+    "isActive": true
+  },
+  {
+    "id": "svc_rua_xe_cao_cap",
+    "slug": "rua-xe-cao-cap-da-nang",
+    "categoryId": "svc_cat_detailing",
+    "name": "Rửa xe cao cấp Đà Nẵng",
+    "shortDescription": "Rửa thân vỏ, hút bụi nội thất, vệ sinh kính, mâm lốp và kiểm tra nhanh bề mặt.",
+    "description": "Dịch vụ rửa xe cao cấp dành cho khách muốn xe sạch kỹ, thao tác cẩn thận và không làm xước bề mặt. Quy trình gồm xịt gầm nhẹ, rửa thân vỏ, xử lý mâm lốp, hút bụi và lau nội thất cơ bản.",
+    "heroImageUrl": "https://images.unsplash.com/photo-1607860108855-64acf2078ed9?q=80&w=1400&auto=format&fit=crop",
+    "gallery": [],
+    "basePrice": 120000,
+    "priceLabel": "from",
+    "estimatedDurationMinutes": 45,
+    "relatedProductIds": ["prod_goi_rua_xe_cao_cap"],
+    "faqs": [
+      {
+        "question": "Rửa xe cao cấp khác rửa nhanh thế nào?",
+        "answer": "Quy trình chú trọng mâm lốp, khe kẽ, khăn lau riêng và kiểm tra bề mặt kỹ hơn để giảm rủi ro xước sơn."
+      }
+    ],
+    "seo": {
+      "title": "Rửa xe cao cấp Đà Nẵng | Shinwa Pro Garage",
+      "description": "Rửa xe cao cấp tại Đà Nẵng, vệ sinh thân vỏ, nội thất cơ bản, mâm lốp và kính."
+    },
+    "isFeatured": true,
+    "isActive": true
+  },
+  {
+    "id": "svc_detailing_cham_soc_xe",
+    "slug": "detailing-cham-soc-xe-da-nang",
+    "categoryId": "svc_cat_detailing",
+    "name": "Detailing chăm sóc xe Đà Nẵng",
+    "shortDescription": "Detailing nội thất, đánh bóng, phủ bảo vệ sơn và vệ sinh khoang máy.",
+    "description": "Gói detailing giúp xe sạch sâu, sáng bề mặt và dễ bảo dưỡng hơn trong quá trình sử dụng. Shinwa Pro Garage tư vấn hạng mục theo hiện trạng xe và nhu cầu chăm sóc thực tế.",
+    "heroImageUrl": "https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?q=80&w=1400&auto=format&fit=crop",
+    "gallery": [],
+    "basePrice": 900000,
+    "priceLabel": "from",
+    "estimatedDurationMinutes": 180,
+    "relatedProductIds": ["prod_goi_detailing", "prod_phu_ceramic"],
+    "faqs": [
+      {
+        "question": "Detailing khác rửa xe thông thường thế nào?",
+        "answer": "Detailing xử lý kỹ hơn ở nội thất, bề mặt sơn, khe kẽ và các khu vực cần chăm sóc chuyên sâu."
+      }
+    ],
+    "seo": {
+      "title": "Detailing chăm sóc xe Đà Nẵng | Shinwa Pro Garage",
+      "description": "Detailing nội thất, đánh bóng, phủ bảo vệ sơn và vệ sinh khoang máy tại Đà Nẵng."
+    },
+    "isFeatured": true,
+    "isActive": true
+  },
+  {
+    "id": "svc_ve_sinh_khoang_may",
+    "slug": "ve-sinh-khoang-may-o-to-da-nang",
+    "categoryId": "svc_cat_detailing",
+    "name": "Vệ sinh khoang máy ô tô",
+    "shortDescription": "Làm sạch khoang máy cẩn thận, chú ý khu vực điện, nhựa và cao su.",
+    "description": "Vệ sinh khoang máy giúp xe sạch hơn, dễ phát hiện rò rỉ và tăng cảm giác chỉn chu khi bảo dưỡng. Quy trình cần thao tác đúng để hạn chế ảnh hưởng các giắc điện và chi tiết nhạy cảm.",
+    "heroImageUrl": "https://images.unsplash.com/photo-1635437536607-b8572f443763?q=80&w=1400&auto=format&fit=crop",
+    "gallery": [],
+    "basePrice": null,
+    "priceLabel": "contact",
+    "estimatedDurationMinutes": 90,
+    "relatedProductIds": ["prod_goi_detailing"],
+    "faqs": [
+      {
+        "question": "Vệ sinh khoang máy có an toàn không?",
+        "answer": "Cần thao tác đúng quy trình, che chắn khu vực nhạy cảm và kiểm tra lại sau khi hoàn thiện."
+      }
+    ],
+    "seo": {
+      "title": "Vệ sinh khoang máy ô tô Đà Nẵng | Shinwa Pro Garage",
+      "description": "Vệ sinh khoang máy ô tô, chăm sóc chi tiết nhựa, cao su và kiểm tra khoang động cơ."
+    },
+    "isFeatured": false,
+    "isActive": true
+  },
+  {
+    "id": "svc_ve_sinh_noi_that",
+    "slug": "ve-sinh-noi-that-o-to-da-nang",
+    "categoryId": "svc_cat_detailing",
+    "name": "Vệ sinh nội thất ô tô",
+    "shortDescription": "Làm sạch ghế, sàn, taplo, khe kẽ và khử mùi nội thất theo tình trạng xe.",
+    "description": "Dịch vụ vệ sinh nội thất giúp làm sạch bụi bẩn, mùi khó chịu và các khu vực thường bị bỏ sót. Phù hợp cho xe gia đình, xe dịch vụ hoặc xe lâu ngày chưa chăm sóc sâu.",
+    "heroImageUrl": "https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?q=80&w=1400&auto=format&fit=crop",
+    "gallery": [],
+    "basePrice": null,
+    "priceLabel": "contact",
+    "estimatedDurationMinutes": 150,
+    "relatedProductIds": ["prod_goi_detailing"],
+    "faqs": [
+      {
+        "question": "Vệ sinh nội thất mất bao lâu?",
+        "answer": "Tùy tình trạng xe, chất liệu ghế và mức độ bẩn. Garage sẽ tư vấn thời gian dự kiến khi tiếp nhận."
+      }
+    ],
+    "seo": {
+      "title": "Vệ sinh nội thất ô tô Đà Nẵng | Shinwa Pro Garage",
+      "description": "Vệ sinh nội thất ô tô, ghế, sàn, taplo, khe kẽ và khử mùi tại Đà Nẵng."
+    },
+    "isFeatured": false,
+    "isActive": true
+  },
+  {
+    "id": "svc_phu_gam",
+    "slug": "phu-gam-o-to-da-nang",
+    "categoryId": "svc_cat_detailing",
+    "name": "Phủ gầm ô tô",
+    "shortDescription": "Tư vấn phủ gầm chống ồn, hạn chế bám bẩn và bảo vệ khu vực gầm xe.",
+    "description": "Phủ gầm phù hợp với khách thường xuyên đi mưa, đường xấu hoặc muốn chăm sóc khu vực gầm xe tốt hơn. Cần kiểm tra, vệ sinh và che chắn trước khi thi công.",
+    "heroImageUrl": "https://images.unsplash.com/photo-1625047509168-a7026f36de04?q=80&w=1400&auto=format&fit=crop",
+    "gallery": [],
+    "basePrice": null,
+    "priceLabel": "contact",
+    "estimatedDurationMinutes": null,
+    "relatedProductIds": [],
+    "faqs": [
+      {
+        "question": "Phủ gầm có cần vệ sinh trước không?",
+        "answer": "Có. Bề mặt gầm cần được kiểm tra và vệ sinh phù hợp để lớp phủ bám tốt hơn."
+      }
+    ],
+    "seo": {
+      "title": "Phủ gầm ô tô Đà Nẵng | Shinwa Pro Garage",
+      "description": "Tư vấn phủ gầm ô tô, vệ sinh gầm và bảo vệ khu vực gầm xe tại Đà Nẵng."
+    },
+    "isFeatured": false,
+    "isActive": true
+  },
+  {
+    "id": "svc_mo_tinh_nang_an",
+    "slug": "mo-tinh-nang-an-o-to-da-nang",
+    "categoryId": "svc_cat_electrical",
+    "name": "Mở tính năng ẩn ô tô",
+    "shortDescription": "Tư vấn kích hoạt tính năng phù hợp theo dòng xe, đời xe và cấu hình hệ thống.",
+    "description": "Một số dòng xe có thể hỗ trợ cấu hình hoặc mở thêm tính năng. Shinwa kiểm tra khả năng tương thích trước khi thực hiện để hạn chế rủi ro.",
+    "heroImageUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1400&auto=format&fit=crop",
+    "gallery": [],
+    "basePrice": null,
+    "priceLabel": "contact",
+    "estimatedDurationMinutes": null,
+    "relatedProductIds": [],
+    "faqs": [
+      {
+        "question": "Mở tính năng ẩn có áp dụng mọi xe không?",
+        "answer": "Không. Cần kiểm tra dòng xe, đời xe và cấu hình module trước khi tư vấn."
+      }
+    ],
+    "seo": {
+      "title": "Mở tính năng ẩn ô tô Đà Nẵng | Shinwa Pro Garage",
+      "description": "Tư vấn mở tính năng ẩn, cấu hình phần mềm và kiểm tra tương thích ô tô tại Đà Nẵng."
+    },
+    "isFeatured": false,
+    "isActive": true
+  },
+  {
+    "id": "svc_lap_phu_kien_nang_cap",
+    "slug": "lap-phu-kien-nang-cap-o-to-da-nang",
+    "categoryId": "svc_cat_electrical",
+    "name": "Lắp phụ kiện nâng cấp ô tô Đà Nẵng",
+    "shortDescription": "Camera hành trình, màn hình, phim cách nhiệt, đèn LED phù hợp từng dòng xe.",
+    "description": "Dịch vụ lắp phụ kiện tập trung vào tư vấn cấu hình phù hợp, thi công gọn và kiểm tra vận hành sau lắp. Các sản phẩm được chọn theo nhu cầu sử dụng và dòng xe.",
+    "heroImageUrl": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1400&auto=format&fit=crop",
+    "gallery": [],
+    "basePrice": null,
+    "priceLabel": "contact",
+    "estimatedDurationMinutes": 120,
+    "relatedProductIds": ["prod_camera_hanh_trinh", "prod_man_hinh_android", "prod_phim_cach_nhiet"],
+    "faqs": [
+      {
+        "question": "Phụ kiện có phù hợp mọi dòng xe không?",
+        "answer": "Garage sẽ tư vấn theo đời xe, nhu cầu sử dụng và cấu hình điện để chọn phương án phù hợp."
+      }
+    ],
+    "seo": {
+      "title": "Lắp phụ kiện nâng cấp ô tô Đà Nẵng | Shinwa Pro Garage",
+      "description": "Lắp camera hành trình, màn hình, phim cách nhiệt và đèn LED ô tô tại Đà Nẵng."
+    },
+    "isFeatured": false,
+    "isActive": true
+  },
+  {
+    "id": "svc_cuu_ho_24_7",
+    "slug": "cuu-ho-o-to-24-7-da-nang",
+    "categoryId": "svc_cat_emergency",
+    "name": "Cứu hộ ô tô 24/7 Đà Nẵng",
+    "shortDescription": "Hỗ trợ kích bình, thay lốp, kéo xe, kiểm tra nhanh và điều phối cứu hộ.",
+    "description": "Dịch vụ cứu hộ 24/7 hỗ trợ khách gặp sự cố trên đường tại Đà Nẵng và khu vực lân cận. Shinwa tiếp nhận thông tin qua hotline, xác định vị trí, tình trạng xe và tư vấn phương án hỗ trợ phù hợp.",
+    "heroImageUrl": "https://images.unsplash.com/photo-1549924231-f129b911e442?q=80&w=1400&auto=format&fit=crop",
+    "gallery": [],
+    "basePrice": null,
+    "priceLabel": "contact",
+    "estimatedDurationMinutes": null,
+    "relatedProductIds": ["prod_cuu_ho_kich_binh", "prod_cuu_ho_keo_xe"],
+    "faqs": [
+      {
+        "question": "Cứu hộ 24/7 có báo phí trước không?",
+        "answer": "Có. Chi phí phụ thuộc vị trí, thời điểm, loại sự cố và phương án hỗ trợ; nhân viên sẽ xác nhận trước khi điều phối."
+      }
+    ],
+    "seo": {
+      "title": "Cứu hộ ô tô 24/7 Đà Nẵng | Shinwa Pro Garage",
+      "description": "Cứu hộ ô tô 24/7 tại Đà Nẵng, kích bình, thay lốp, kéo xe và hỗ trợ sự cố trên đường."
+    },
+    "isFeatured": true,
+    "isActive": true
+  },
+  {
+    "id": "svc_bao_hiem_o_to",
+    "slug": "bao-hiem-o-to-da-nang",
+    "categoryId": "svc_cat_insurance",
+    "name": "Tư vấn bảo hiểm ô tô",
+    "shortDescription": "Tư vấn bảo hiểm vật chất, trách nhiệm dân sự và hỗ trợ hồ sơ bồi thường.",
+    "description": "Shinwa hỗ trợ khách hàng hiểu rõ các lựa chọn bảo hiểm ô tô, quyền lợi cơ bản, hồ sơ cần chuẩn bị và quy trình xử lý khi xe gặp va chạm hoặc cần sửa chữa theo bảo hiểm.",
+    "heroImageUrl": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1400&auto=format&fit=crop",
+    "gallery": [],
+    "basePrice": null,
+    "priceLabel": "contact",
+    "estimatedDurationMinutes": 30,
+    "relatedProductIds": ["prod_tu_van_bao_hiem"],
+    "faqs": [
+      {
+        "question": "Garage có hỗ trợ hồ sơ bồi thường không?",
+        "answer": "Có. Shinwa hỗ trợ khách chuẩn bị thông tin xe, hình ảnh hiện trạng và các giấy tờ cần thiết theo yêu cầu bảo hiểm."
+      }
+    ],
+    "seo": {
+      "title": "Tư vấn bảo hiểm ô tô Đà Nẵng | Shinwa Pro Garage",
+      "description": "Tư vấn bảo hiểm ô tô, hồ sơ bồi thường và hỗ trợ sửa chữa xe theo bảo hiểm tại Đà Nẵng."
+    },
+    "isFeatured": false,
+    "isActive": true
+  },
+  {
+    "id": "svc_ho_tro_dang_kiem",
+    "slug": "kiem-tra-xe-truoc-dang-kiem-da-nang",
+    "categoryId": "svc_cat_insurance",
+    "name": "Kiểm tra xe trước đăng kiểm",
+    "shortDescription": "Rà soát đèn, phanh, lốp, khí thải, gầm và các lỗi dễ bị từ chối đăng kiểm.",
+    "description": "Gói kiểm tra trước đăng kiểm giúp chủ xe chủ động xử lý các lỗi thường gặp trước khi đưa xe đi kiểm định. Shinwa tập trung vào các hạng mục an toàn, chiếu sáng, phanh, lốp và dấu hiệu bất thường dễ phát sinh chi phí.",
+    "heroImageUrl": "https://images.unsplash.com/photo-1493238792000-8113da705763?q=80&w=1400&auto=format&fit=crop",
+    "gallery": [],
+    "basePrice": 250000,
+    "priceLabel": "from",
+    "estimatedDurationMinutes": 45,
+    "relatedProductIds": ["prod_kiem_tra_truoc_dang_kiem"],
+    "faqs": [
+      {
+        "question": "Kiểm tra trước đăng kiểm có đảm bảo đậu không?",
+        "answer": "Garage không cam kết thay trung tâm đăng kiểm, nhưng giúp phát hiện và xử lý sớm các lỗi dễ bị từ chối."
+      }
+    ],
+    "seo": {
+      "title": "Kiểm tra xe trước đăng kiểm Đà Nẵng | Shinwa Pro Garage",
+      "description": "Rà soát đèn, phanh, lốp, gầm và hạng mục an toàn trước đăng kiểm tại Đà Nẵng."
+    },
+    "isFeatured": false,
+    "isActive": true
+  }
+]
