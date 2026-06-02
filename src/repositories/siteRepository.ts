@@ -1,6 +1,6 @@
-import siteSettings from '@/data/site-settings.json';
 import type { SiteSettings } from '@/domain/common';
+import { getJson } from '@/repositories/apiClient';
 
 export async function getSiteSettings(): Promise<SiteSettings> {
-  return siteSettings as unknown as SiteSettings;
+  return getJson<SiteSettings>('/api/public/site-settings');
 }

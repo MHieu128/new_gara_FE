@@ -4,6 +4,7 @@ import { useRoute } from 'vue-router';
 import Breadcrumb from '@/components/common/Breadcrumb.vue';
 import Container from '@/components/common/Container.vue';
 import CTAButton from '@/components/common/CTAButton.vue';
+import GarageLoader from '@/components/common/GarageLoader.vue';
 import PriceDisplay from '@/components/product/PriceDisplay.vue';
 import type { Product } from '@/domain/product';
 import { getProductBySlug } from '@/repositories/productRepository';
@@ -27,7 +28,7 @@ watch(() => route.params.slug, loadProduct);
   <section class="py-10">
     <Container>
       <Breadcrumb :items="[{ label: 'Sản phẩm', to: '/san-pham' }, { label: product?.name ?? 'Chi tiết' }]" />
-      <div v-if="loading" class="mt-10 rounded-lg bg-white p-8 text-steel">Đang tải sản phẩm...</div>
+      <GarageLoader v-if="loading" class="mt-10" label="Đang nâng xe lên cầu kiểm tra sản phẩm..." />
       <div v-else-if="product" class="mt-8 grid gap-10 lg:grid-cols-[1fr_0.9fr]">
         <div class="media-fallback aspect-[4/3] overflow-hidden rounded-lg shadow-premium">
           <img

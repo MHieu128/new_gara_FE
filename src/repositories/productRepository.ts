@@ -1,41 +1,36 @@
-import products from '@/data/products.json';
-import productCategories from '@/data/product-categories.json';
 import type { Product, ProductCategory, ProductQuery } from '@/domain/product';
+import { getJson, type PagedResponse } from '@/repositories/apiClient';
+
+const defaultPageSize = 100;
 
 export async function getProductCategories(): Promise<ProductCategory[]> {
-  return [...(productCategories as unknown as ProductCategory[])].sort((a, b) => a.sortOrder - b.sortOrder);
+  const categories = await getJson<ProductCategory[]>('/api/public/product-categories');
+  return categories.sort((a, b) => a.sortOrder - b.sortOrder);
 }
 
 export async function getProducts(query: ProductQuery = {}): Promise<Product[]> {
-  const categories = await getProductCategories();
-  const category = query.categorySlug
-    ? categories.find((item) => item.slug === query.categorySlug)
-    : null;
-  const keyword = query.keyword?.trim().toLowerCase();
+  const categorySlug = query.categorySlug ?? (query.categoryId ? await findProductCategorySlug(query.categoryId) : undefined);
+  const response = await getJson<PagedResponse<Product>>('/api/public/products', {
+    categorySlug,
+    brand: query.brand,
+    keyword: query.keyword,
+    featuredOnly: query.featuredOnly,
+    page: 1,
+    pageSize: defaultPageSize,
+  });
 
-  return (products as unknown as Product[])
-    .filter((product) => product.isActive)
-    .filter((product) => !query.featuredOnly || product.isFeatured)
-    .filter((product) => !query.categoryId || product.categoryId === query.categoryId)
-    .filter((product) => !category || product.categoryId === category.id)
-    .filter((product) => !query.brand || product.brand === query.brand)
-    .filter((product) => {
-      if (!keyword) return true;
-      const haystack = [
-        product.name,
-        product.shortDescription,
-        product.description,
-        product.brand,
-        product.sku,
-        ...(product.tags ?? []),
-      ]
-        .filter(Boolean)
-        .join(' ')
-        .toLowerCase();
-      return haystack.includes(keyword);
-    });
+  return response.items;
 }
 
 export async function getProductBySlug(slug: string): Promise<Product | null> {
-  return (products as unknown as Product[]).find((product) => product.slug === slug && product.isActive) ?? null;
+  try {
+    return await getJson<Product>(`/api/public/products/${encodeURIComponent(slug)}`);
+  } catch {
+    return null;
+  }
+}
+
+async function findProductCategorySlug(categoryId: string): Promise<string | undefined> {
+  const categories = await getProductCategories();
+  return categories.find((item) => item.id === categoryId)?.slug;
 }

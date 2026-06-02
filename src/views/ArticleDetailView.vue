@@ -4,6 +4,7 @@ import { useRoute } from 'vue-router';
 import Breadcrumb from '@/components/common/Breadcrumb.vue';
 import Container from '@/components/common/Container.vue';
 import CTAButton from '@/components/common/CTAButton.vue';
+import GarageLoader from '@/components/common/GarageLoader.vue';
 import type { Article } from '@/domain/article';
 import { getArticleBySlug } from '@/repositories/articleRepository';
 
@@ -26,7 +27,7 @@ watch(() => route.params.slug, loadArticle);
   <section class="py-10">
     <Container>
       <Breadcrumb :items="[{ label: 'Tin tức', to: '/tin-tuc' }, { label: article?.title ?? 'Chi tiết' }]" />
-      <div v-if="loading" class="mt-10 rounded-lg bg-white p-8 text-steel">Đang tải bài viết...</div>
+      <GarageLoader v-if="loading" class="mt-10" label="Đang lấy bài tư vấn từ garage..." />
       <article v-else-if="article" class="mt-8">
         <div class="mx-auto max-w-3xl">
           <p class="text-sm font-bold uppercase tracking-[0.18em] text-ember">{{ article.category }}</p>

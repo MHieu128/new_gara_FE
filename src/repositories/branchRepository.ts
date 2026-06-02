@@ -1,15 +1,20 @@
-import branches from '@/data/branches.json';
 import type { Branch, BranchQuery } from '@/domain/branch';
+import { getJson } from '@/repositories/apiClient';
 
 export async function getBranches(query: BranchQuery = {}): Promise<Branch[]> {
-  return (branches as unknown as Branch[])
-    .filter((branch) => branch.isActive)
-    .filter((branch) => !query.province || branch.province === query.province)
-    .filter((branch) => !query.serviceId || branch.services.includes(query.serviceId));
+  const branches = await getJson<Branch[]>('/api/public/branches', {
+    province: query.province,
+  });
+
+  return query.serviceId ? branches.filter((branch) => branch.services.includes(query.serviceId!)) : branches;
 }
 
 export async function getBranchBySlug(slug: string): Promise<Branch | null> {
-  return (branches as unknown as Branch[]).find((branch) => branch.slug === slug && branch.isActive) ?? null;
+  try {
+    return await getJson<Branch>(`/api/public/branches/${encodeURIComponent(slug)}`);
+  } catch {
+    return null;
+  }
 }
 
 export async function getBranchesByProvince(province: string): Promise<Branch[]> {

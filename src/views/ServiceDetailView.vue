@@ -4,6 +4,7 @@ import { useRoute } from 'vue-router';
 import Breadcrumb from '@/components/common/Breadcrumb.vue';
 import Container from '@/components/common/Container.vue';
 import CTAButton from '@/components/common/CTAButton.vue';
+import GarageLoader from '@/components/common/GarageLoader.vue';
 import PriceDisplay from '@/components/product/PriceDisplay.vue';
 import type { Service } from '@/domain/service';
 import { getServiceBySlug } from '@/repositories/serviceRepository';
@@ -27,7 +28,7 @@ watch(() => route.params.slug, loadService);
   <section class="py-10">
     <Container>
       <Breadcrumb :items="[{ label: 'Dịch vụ', to: '/dich-vu' }, { label: service?.name ?? 'Chi tiết' }]" />
-      <div v-if="loading" class="mt-10 rounded-lg bg-white p-8 text-steel">Đang tải dịch vụ...</div>
+      <GarageLoader v-if="loading" class="mt-10" label="Đang mở khoang dịch vụ garage..." />
       <div v-else-if="service" class="mt-8">
         <div class="grid gap-10 lg:grid-cols-[1fr_0.85fr]">
           <div class="media-fallback aspect-[16/10] overflow-hidden rounded-lg shadow-premium">
