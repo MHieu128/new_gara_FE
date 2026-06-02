@@ -8,10 +8,19 @@ const { currentUser, logout } = useAdminAuth();
 const navItems = [
   { label: 'Dashboard', to: '/admin' },
   { label: 'Products', to: '/admin/products' },
+  { label: 'Product Cats', to: '/admin/product-categories' },
   { label: 'Services', to: '/admin/services' },
+  { label: 'Service Cats', to: '/admin/service-categories' },
   { label: 'Branches', to: '/admin/branches' },
   { label: 'Articles', to: '/admin/articles' },
   { label: 'Leads', to: '/admin/leads' },
+  { label: 'Bookings', to: '/admin/bookings' },
+  { label: 'Customers', to: '/admin/customers' },
+  { label: 'Vehicles', to: '/admin/vehicles' },
+  { label: 'Quotations', to: '/admin/quotations' },
+  { label: 'Job Cards', to: '/admin/job-cards' },
+  { label: 'Invoices', to: '/admin/invoices' },
+  { label: 'Warranties', to: '/admin/warranties' },
   { label: 'Users', to: '/admin/users' },
 ];
 

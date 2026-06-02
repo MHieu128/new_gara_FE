@@ -37,6 +37,9 @@ const items = ref<AdminRecord[]>([]);
 const productCategories = ref<AdminRecord[]>([]);
 const serviceCategories = ref<AdminRecord[]>([]);
 const branches = ref<AdminRecord[]>([]);
+const customers = ref<AdminRecord[]>([]);
+const vehicles = ref<AdminRecord[]>([]);
+const users = ref<AdminRecord[]>([]);
 const selected = ref<AdminRecord | null>(null);
 const model = ref<Record<string, FormValue>>({});
 const isLoading = ref(false);
@@ -63,7 +66,44 @@ const roleOptions = [
   { label: 'ContentEditor', value: 'ContentEditor' },
 ];
 
+const bookingTypeOptions = ['consultation', 'repair', 'maintenance', 'upgrade', 'inspection'].map((value) => ({ label: value, value }));
+const bookingStatusOptions = ['new', 'confirmed', 'checked_in', 'in_progress', 'completed', 'cancelled', 'no_show'].map((value) => ({ label: value, value }));
+const quoteStatusOptions = ['draft', 'sent', 'accepted', 'rejected', 'expired', 'cancelled'].map((value) => ({ label: value, value }));
+const jobStatusOptions = ['new', 'diagnosed', 'waiting_parts', 'in_progress', 'quality_check', 'completed', 'cancelled'].map((value) => ({ label: value, value }));
+const invoiceStatusOptions = ['draft', 'issued', 'partially_paid', 'paid', 'cancelled'].map((value) => ({ label: value, value }));
+const warrantyStatusOptions = ['active', 'expired', 'claimed', 'voided'].map((value) => ({ label: value, value }));
+
 const configs = computed<Record<string, ResourceConfig>>(() => ({
+  productCategories: {
+    title: 'Product Categories',
+    resource: 'productCategories',
+    columns: ['name', 'slug', 'sortOrder'],
+    defaults: { name: '', slug: '', description: '', imageUrl: '', sortOrder: 0, parentId: '' },
+    fields: [
+      textField('name', 'Name'),
+      textField('slug', 'Slug'),
+      textareaField('description', 'Description'),
+      textField('imageUrl', 'Image URL'),
+      numberField('sortOrder', 'Sort order'),
+      selectField('parentId', 'Parent', productCategories.value, true),
+    ],
+    buildPayload: categoryPayload,
+  },
+  serviceCategories: {
+    title: 'Service Categories',
+    resource: 'serviceCategories',
+    columns: ['name', 'slug', 'sortOrder'],
+    defaults: { name: '', slug: '', description: '', imageUrl: '', sortOrder: 0, parentId: '' },
+    fields: [
+      textField('name', 'Name'),
+      textField('slug', 'Slug'),
+      textareaField('description', 'Description'),
+      textField('imageUrl', 'Image URL'),
+      numberField('sortOrder', 'Sort order'),
+      selectField('parentId', 'Parent', serviceCategories.value, true),
+    ],
+    buildPayload: categoryPayload,
+  },
   products: {
     title: 'Products',
     resource: 'products',
@@ -277,6 +317,212 @@ const configs = computed<Record<string, ResourceConfig>>(() => ({
     }),
     toModel: jsonModel(['seo'], ['tags']),
   },
+  customers: {
+    title: 'Customers',
+    resource: 'customers',
+    columns: ['fullName', 'phone', 'email', 'source'],
+    defaults: { fullName: '', phone: '', email: '', source: 'admin' },
+    fields: [textField('fullName', 'Full name'), textField('phone', 'Phone'), textField('email', 'Email'), textField('source', 'Source')],
+    buildPayload: (value) => ({
+      fullName: stringValue(value.fullName),
+      phone: stringValue(value.phone),
+      email: optionalString(value.email),
+      source: optionalString(value.source),
+    }),
+  },
+  vehicles: {
+    title: 'Vehicles',
+    resource: 'vehicles',
+    columns: ['customerName', 'brand', 'model', 'year', 'plateNumber'],
+    defaults: { customerId: firstId(customers.value), plateNumber: '', brand: '', model: '', year: '', vin: '', color: '' },
+    fields: [
+      selectField('customerId', 'Customer', customers.value),
+      textField('plateNumber', 'Plate number'),
+      textField('brand', 'Brand'),
+      textField('model', 'Model'),
+      numberField('year', 'Year'),
+      textField('vin', 'VIN'),
+      textField('color', 'Color'),
+    ],
+    buildPayload: (value) => ({
+      customerId: stringValue(value.customerId),
+      plateNumber: optionalString(value.plateNumber),
+      brand: optionalString(value.brand),
+      model: optionalString(value.model),
+      year: optionalNumber(value.year),
+      vin: optionalString(value.vin),
+      color: optionalString(value.color),
+    }),
+  },
+  bookings: {
+    title: 'Bookings',
+    resource: 'bookings',
+    columns: ['customerName', 'bookingType', 'status', 'preferredDate', 'preferredTime'],
+    defaults: {
+      customerId: firstId(customers.value),
+      vehicleId: firstId(vehicles.value),
+      branchId: firstId(branches.value),
+      requestedServiceId: '',
+      preferredDate: new Date().toISOString().slice(0, 10),
+      preferredTime: '09:00',
+      bookingType: 'consultation',
+      status: 'new',
+      customerNote: '',
+      internalNote: '',
+      assignedUserId: '',
+      source: 'admin',
+    },
+    fields: [
+      selectField('customerId', 'Customer', customers.value),
+      selectField('vehicleId', 'Vehicle', vehicles.value, true),
+      selectField('branchId', 'Branch', branches.value, true),
+      textField('requestedServiceId', 'Requested service GUID'),
+      textField('preferredDate', 'Preferred date YYYY-MM-DD'),
+      textField('preferredTime', 'Preferred time'),
+      { key: 'bookingType', label: 'Booking type', type: 'select', options: bookingTypeOptions },
+      { key: 'status', label: 'Status', type: 'select', options: bookingStatusOptions },
+      textareaField('customerNote', 'Customer note'),
+      textareaField('internalNote', 'Internal note'),
+      selectField('assignedUserId', 'Assigned user', users.value, true),
+      textField('source', 'Source'),
+    ],
+    buildPayload: (value) => ({
+      customerId: stringValue(value.customerId),
+      vehicleId: optionalString(value.vehicleId),
+      branchId: optionalString(value.branchId),
+      requestedServiceId: optionalString(value.requestedServiceId),
+      preferredDate: optionalString(value.preferredDate),
+      preferredTime: optionalString(value.preferredTime),
+      bookingType: stringValue(value.bookingType),
+      status: stringValue(value.status),
+      customerNote: optionalString(value.customerNote),
+      internalNote: optionalString(value.internalNote),
+      assignedUserId: optionalString(value.assignedUserId),
+      source: optionalString(value.source),
+    }),
+  },
+  quotations: {
+    title: 'Quotations',
+    resource: 'quotations',
+    columns: ['quotationNumber', 'status', 'subtotal', 'grandTotal'],
+    defaults: moneyDefaults('QT-MANUAL-0001', 'quotationNumber', 'draft'),
+    fields: moneyFields('quotationNumber', quoteStatusOptions),
+    buildPayload: moneyPayload('quotationNumber'),
+    toModel: jsonModel(['items'], []),
+  },
+  jobCards: {
+    title: 'Job Cards',
+    resource: 'jobCards',
+    columns: ['jobNumber', 'status', 'customerRequest', 'odometerKm'],
+    defaults: {
+      bookingId: '',
+      quotationId: '',
+      customerId: firstId(customers.value),
+      vehicleId: firstId(vehicles.value),
+      branchId: firstId(branches.value),
+      jobNumber: 'JOB-MANUAL-0001',
+      status: 'new',
+      odometerKm: '',
+      customerRequest: '',
+      diagnosisNote: '',
+      technicianNote: '',
+      qualityCheckNote: '',
+      assignedTechnicianId: '',
+      startedAt: '',
+      completedAt: '',
+    },
+    fields: [
+      textField('bookingId', 'Booking GUID'),
+      textField('quotationId', 'Quotation GUID'),
+      selectField('customerId', 'Customer', customers.value),
+      selectField('vehicleId', 'Vehicle', vehicles.value, true),
+      selectField('branchId', 'Branch', branches.value, true),
+      textField('jobNumber', 'Job number'),
+      { key: 'status', label: 'Status', type: 'select', options: jobStatusOptions },
+      numberField('odometerKm', 'Odometer km'),
+      textareaField('customerRequest', 'Customer request'),
+      textareaField('diagnosisNote', 'Diagnosis note'),
+      textareaField('technicianNote', 'Technician note'),
+      textareaField('qualityCheckNote', 'Quality check note'),
+      selectField('assignedTechnicianId', 'Technician', users.value, true),
+      textField('startedAt', 'Started at ISO'),
+      textField('completedAt', 'Completed at ISO'),
+    ],
+    buildPayload: (value) => ({
+      bookingId: optionalString(value.bookingId),
+      quotationId: optionalString(value.quotationId),
+      customerId: stringValue(value.customerId),
+      vehicleId: optionalString(value.vehicleId),
+      branchId: optionalString(value.branchId),
+      jobNumber: stringValue(value.jobNumber),
+      status: stringValue(value.status),
+      odometerKm: optionalNumber(value.odometerKm),
+      customerRequest: optionalString(value.customerRequest),
+      diagnosisNote: optionalString(value.diagnosisNote),
+      technicianNote: optionalString(value.technicianNote),
+      qualityCheckNote: optionalString(value.qualityCheckNote),
+      assignedTechnicianId: optionalString(value.assignedTechnicianId),
+      startedAt: optionalString(value.startedAt),
+      completedAt: optionalString(value.completedAt),
+    }),
+  },
+  invoices: {
+    title: 'Invoices',
+    resource: 'invoices',
+    columns: ['invoiceNumber', 'status', 'grandTotal', 'paidAmount'],
+    defaults: { ...moneyDefaults('INV-MANUAL-0001', 'invoiceNumber', 'draft'), paidAmount: 0, issuedAt: '', paidAt: '', quotationId: '', jobCardId: '' },
+    fields: [
+      ...moneyFields('invoiceNumber', invoiceStatusOptions),
+      numberField('paidAmount', 'Paid amount'),
+      textField('quotationId', 'Quotation GUID'),
+      textField('jobCardId', 'Job card GUID'),
+      textField('issuedAt', 'Issued at ISO'),
+      textField('paidAt', 'Paid at ISO'),
+    ],
+    buildPayload: (value) => ({ ...moneyPayload('invoiceNumber')(value), paidAmount: optionalNumber(value.paidAmount) ?? 0, quotationId: optionalString(value.quotationId), jobCardId: optionalString(value.jobCardId), issuedAt: optionalString(value.issuedAt), paidAt: optionalString(value.paidAt) }),
+    toModel: jsonModel(['items'], []),
+  },
+  warranties: {
+    title: 'Warranties',
+    resource: 'warranties',
+    columns: ['warrantyNumber', 'title', 'status', 'startDate', 'endDate'],
+    defaults: {
+      customerId: firstId(customers.value),
+      vehicleId: firstId(vehicles.value),
+      jobCardId: '',
+      invoiceId: '',
+      warrantyNumber: 'WAR-MANUAL-0001',
+      title: '',
+      description: '',
+      startDate: new Date().toISOString().slice(0, 10),
+      endDate: new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10),
+      status: 'active',
+    },
+    fields: [
+      selectField('customerId', 'Customer', customers.value),
+      selectField('vehicleId', 'Vehicle', vehicles.value, true),
+      textField('jobCardId', 'Job card GUID'),
+      textField('invoiceId', 'Invoice GUID'),
+      textField('warrantyNumber', 'Warranty number'),
+      textField('title', 'Title'),
+      textareaField('description', 'Description'),
+      textField('startDate', 'Start date YYYY-MM-DD'),
+      textField('endDate', 'End date YYYY-MM-DD'),
+      { key: 'status', label: 'Status', type: 'select', options: warrantyStatusOptions },
+    ],
+    buildPayload: (value) => ({
+      customerId: stringValue(value.customerId),
+      vehicleId: optionalString(value.vehicleId),
+      jobCardId: optionalString(value.jobCardId),
+      invoiceId: optionalString(value.invoiceId),
+      warrantyNumber: stringValue(value.warrantyNumber),
+      title: stringValue(value.title),
+      description: optionalString(value.description),
+      startDate: stringValue(value.startDate),
+      endDate: stringValue(value.endDate),
+      status: stringValue(value.status),
+    }),
+  },
   users: {
     title: 'Users',
     resource: 'users',
@@ -327,10 +573,13 @@ onMounted(async () => {
 });
 
 async function loadLookups() {
-  [productCategories.value, serviceCategories.value, branches.value] = await Promise.all([
+  [productCategories.value, serviceCategories.value, branches.value, customers.value, vehicles.value, users.value] = await Promise.all([
     listResource('productCategories'),
     listResource('serviceCategories'),
     listResource('branches'),
+    listResource('customers'),
+    listResource('vehicles'),
+    listResource('users'),
   ]);
 }
 
@@ -382,6 +631,74 @@ async function remove(item: AdminRecord) {
   if (!window.confirm(`Xóa/ẩn ${String(item.name ?? item.title ?? item.email ?? item.id)}?`)) return;
   await deleteResource(config.value.resource, item.id);
   await load();
+}
+
+function categoryPayload(value: Record<string, FormValue>): Record<string, unknown> {
+  return {
+    name: stringValue(value.name),
+    slug: stringValue(value.slug),
+    description: optionalString(value.description),
+    imageUrl: optionalString(value.imageUrl),
+    sortOrder: optionalNumber(value.sortOrder) ?? 0,
+    parentId: optionalString(value.parentId),
+  };
+}
+
+function moneyDefaults(number: string, numberKey: string, status: string): Record<string, FormValue> {
+  return {
+    customerId: firstId(customers.value),
+    vehicleId: firstId(vehicles.value),
+    leadId: '',
+    bookingId: '',
+    branchId: firstId(branches.value),
+    [numberKey]: number,
+    status,
+    subtotal: 0,
+    discountTotal: 0,
+    grandTotal: 0,
+    note: '',
+    validUntil: '',
+    createdByUserId: '',
+    items: '[{"itemType":"service","productId":null,"serviceId":null,"description":"Dịch vụ garage","quantity":1,"unitPrice":0,"lineTotal":0,"sortOrder":1}]',
+  };
+}
+
+function moneyFields(numberKey: string, statusOptions: { label: string; value: string }[]): FieldConfig[] {
+  return [
+    selectField('customerId', 'Customer', customers.value),
+    selectField('vehicleId', 'Vehicle', vehicles.value, true),
+    textField('leadId', 'Lead GUID'),
+    textField('bookingId', 'Booking GUID'),
+    selectField('branchId', 'Branch', branches.value, true),
+    textField(numberKey, 'Document number'),
+    { key: 'status', label: 'Status', type: 'select', options: statusOptions },
+    numberField('subtotal', 'Subtotal'),
+    numberField('discountTotal', 'Discount total'),
+    numberField('grandTotal', 'Grand total'),
+    textareaField('note', 'Note'),
+    textField('validUntil', 'Valid until ISO'),
+    selectField('createdByUserId', 'Created by', users.value, true),
+    textareaField('items', 'Items JSON'),
+  ];
+}
+
+function moneyPayload(numberKey: string) {
+  return (value: Record<string, FormValue>): Record<string, unknown> => ({
+    customerId: stringValue(value.customerId),
+    vehicleId: optionalString(value.vehicleId),
+    leadId: optionalString(value.leadId),
+    bookingId: optionalString(value.bookingId),
+    branchId: optionalString(value.branchId),
+    [numberKey]: stringValue(value[numberKey]),
+    status: stringValue(value.status),
+    subtotal: optionalNumber(value.subtotal) ?? 0,
+    discountTotal: optionalNumber(value.discountTotal) ?? 0,
+    grandTotal: optionalNumber(value.grandTotal) ?? 0,
+    note: optionalString(value.note),
+    validUntil: optionalString(value.validUntil),
+    createdByUserId: optionalString(value.createdByUserId),
+    items: parseJson(value.items, []),
+  });
 }
 
 function textField(key: string, label: string): FieldConfig {

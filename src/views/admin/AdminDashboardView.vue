@@ -14,6 +14,11 @@ const cards = [
   ['Articles', 'totalArticles'],
   ['Leads', 'totalLeads'],
   ['New Leads', 'newLeads'],
+  ['Bookings Today', 'bookingsToday'],
+  ['Pending Bookings', 'pendingBookings'],
+  ['Active Job Cards', 'activeJobCards'],
+  ['Draft/Sent Quotes', 'draftOrSentQuotations'],
+  ['Unpaid Invoices', 'unpaidInvoices'],
   ['Active Users', 'activeUsers'],
 ] as const;
 

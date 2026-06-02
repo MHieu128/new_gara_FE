@@ -2,5 +2,11 @@ import { createApp } from 'vue';
 import App from './app/App.vue';
 import router from './router';
 import './style.css';
+import { loadSiteConfig } from '@/config/siteConfig';
 
-createApp(App).use(router).mount('#app');
+async function bootstrap() {
+  await loadSiteConfig();
+  createApp(App).use(router).mount('#app');
+}
+
+bootstrap();

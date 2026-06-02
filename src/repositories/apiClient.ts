@@ -1,4 +1,5 @@
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:8080';
+import { getApiBaseUrl } from '@/config/siteConfig';
+
 const authTokenKey = 'garage_admin_token';
 
 export interface PagedResponse<T> {
@@ -49,7 +50,7 @@ async function requestJson<T>(
     body?: unknown;
   },
 ): Promise<T> {
-  const url = new URL(path, API_BASE_URL);
+  const url = new URL(path, await getApiBaseUrl());
 
   Object.entries(options.query ?? {}).forEach(([key, value]) => {
     if (value !== undefined && value !== '') {
@@ -73,6 +74,10 @@ async function requestJson<T>(
   });
 
   if (!response.ok) {
+    if (response.status === 401 || response.status === 403) {
+      throw new Error(`AUTH_${response.status}`);
+    }
+
     throw new Error(`API request failed: ${response.status} ${response.statusText}`);
   }
 

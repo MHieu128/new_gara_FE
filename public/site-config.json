@@ -1,0 +1,32 @@
+{
+  "siteName": "Shinwa Pro Garage",
+  "brandName": "Shinwa Pro Garage",
+  "tagline": "Chăm sóc, sửa chữa và nâng cấp ô tô chuyên nghiệp",
+  "description": "Garage kỹ thuật tại Đà Nẵng chuyên bảo dưỡng, sửa chữa, đồng sơn, điện lạnh, rửa xe, detailing, bảo hiểm và cứu hộ ô tô 24/7.",
+  "logoUrl": "/images/logo.svg",
+  "faviconUrl": "/favicon.svg",
+  "primaryColor": "#071527",
+  "accentColor": "#ff8f1f",
+  "hotline": "0379147896",
+  "hotlines": ["0379147896", "0973307896"],
+  "zaloUrl": "https://zalo.me/0379147896",
+  "messengerUrl": "https://m.me/shinwapro",
+  "email": "shinwapro.dn@gmail.com",
+  "address": "Đối diện công viên Phạm Đức Nam, Ngũ Hành Sơn, Đà Nẵng",
+  "defaultProvince": "Đà Nẵng",
+  "googleMapUrl": "https://maps.google.com",
+  "socials": {
+    "facebook": "",
+    "youtube": "",
+    "tiktok": ""
+  },
+  "seo": {
+    "siteBaseUrl": "http://localhost:5173",
+    "defaultTitle": "Shinwa Pro Garage | Sửa Chữa Bảo Dưỡng Ô Tô Uy Tín Đà Nẵng",
+    "defaultDescription": "Garage kỹ thuật tại Đà Nẵng - bảo dưỡng, sửa chữa, đồng sơn, điện lạnh, rửa xe, detailing, bảo hiểm và cứu hộ ô tô 24/7.",
+    "defaultOgImage": "/images/og-default.webp"
+  },
+  "api": {
+    "baseUrl": "http://localhost:8080"
+  }
+}

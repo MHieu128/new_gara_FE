@@ -9,6 +9,11 @@ export interface Dashboard {
   totalArticles: number;
   totalLeads: number;
   newLeads: number;
+  bookingsToday: number;
+  pendingBookings: number;
+  activeJobCards: number;
+  draftOrSentQuotations: number;
+  unpaidInvoices: number;
   activeUsers: number;
 }
 
@@ -19,6 +24,13 @@ const resourcePaths = {
   articles: '/api/admin/articles',
   users: '/api/admin/users',
   leads: '/api/admin/leads',
+  bookings: '/api/admin/bookings',
+  customers: '/api/admin/customers',
+  vehicles: '/api/admin/vehicles',
+  quotations: '/api/admin/quotations',
+  jobCards: '/api/admin/job-cards',
+  invoices: '/api/admin/invoices',
+  warranties: '/api/admin/warranties',
   productCategories: '/api/admin/product-categories',
   serviceCategories: '/api/admin/service-categories',
 } as const;
