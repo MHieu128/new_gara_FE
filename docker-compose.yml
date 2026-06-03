@@ -4,6 +4,4 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: garage-frontend
-    ports:
-      - "80:80"
     restart: unless-stopped
